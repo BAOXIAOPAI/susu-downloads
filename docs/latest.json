@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "channel": "android-preview",
+  "packageName": "com.dorm.cleaner.preview",
+  "versionName": "0.3.4",
+  "versionCode": 7,
+  "publishedAt": "2026-10-30T16:45:59.832Z",
+  "apkUrl": "https://github.com/BAOXIAOPAI/susu-downloads/releases/download/v0.3.4-preview.1/hezhu-0.3.4-preview.apk",
+  "sizeBytes": 64846519,
+  "sha256": "9d73b708b0407f4a0806002b1412e68acb21194616982291aba55970d3f54609",
+  "minSdk": 24,
+  "supportedAbis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "notes": [
+    "新增个人消息，查看投票、当班与打扫动态。",
+    "新增诊断日志，可导出或主动上传并获取报告编号。",
+    "保留原应用，直接覆盖安装；后台推送尚未开启发送。"
+  ],
+  "sourceCommit": "b26071aac5d88e8cb68717c8ec48fd2336fe06a7",
+  "revoked": false
+}
