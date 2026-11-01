@@ -2,14 +2,14 @@ const $ = id => document.getElementById(id);
 async function loadRelease() {
   const abort = new AbortController(); const timer = setTimeout(() => abort.abort(), 8000);
   try {
-    const res = await fetch('./latest.json', {cache: 'no-cache', signal: abort.signal});
+    const res = await fetch('./cloudbase/latest.json', {cache: 'no-cache', signal: abort.signal});
     if (!res.ok) throw new Error('unavailable');
     const r = await res.json();
-    if (r.schemaVersion !== 1 || r.packageName !== 'com.dorm.cleaner.preview' || r.revoked !== false || !/^https:\/\/github\.com\/BAOXIAOPAI\/susu-downloads\/releases\/download\/[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+\.apk$/.test(r.apkUrl) || !Array.isArray(r.notes) || !r.notes.every(x => typeof x === 'string') || !Number.isFinite(r.sizeBytes) || !/^[a-f0-9]{64}$/.test(r.sha256)) throw new Error('invalid');
-    $('version').textContent = `体验版 ${r.versionName}`;
+    if (r.schemaVersion !== 1 || r.packageName !== 'com.dorm.cleaner.cloudbaseverify' || r.revoked !== false || !/^https:\/\/github\.com\/BAOXIAOPAI\/susu-downloads\/releases\/download\/[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+\.apk$/.test(r.apkUrl) || !Array.isArray(r.notes) || !r.notes.every(x => typeof x === 'string') || !Number.isFinite(r.sizeBytes) || !/^[a-f0-9]{64}$/.test(r.sha256)) throw new Error('invalid');
+    $('version').textContent = `云端体验版 ${r.versionName}`;
     $('download').href = r.apkUrl; $('download').removeAttribute('aria-disabled');
     $('download').textContent = `下载安卓版 · ${(r.sizeBytes / 1048576).toFixed(1)} MB ↓`;
-    $('status').textContent = '保留原应用，直接覆盖安装';
+    $('status').textContent = '已装“苏宿云端体验”build3？直接覆盖升级';
     $('notes').replaceChildren(...r.notes.map(line => {const li = document.createElement('li');li.textContent = line;return li;}));
     $('hash').textContent = `安装包 SHA-256：${r.sha256}`;
   } catch {

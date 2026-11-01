@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "channel": "android-preview",
+  "packageName": "com.dorm.cleaner.cloudbaseverify",
+  "versionName": "0.3.7",
+  "versionCode": 4,
+  "publishedAt": "2026-11-01T12:45:51.553Z",
+  "apkUrl": "https://github.com/BAOXIAOPAI/susu-downloads/releases/download/v0.3.7-cloudbase.1/susu-0.3.7-cloudbase.apk",
+  "sizeBytes": 64784816,
+  "sha256": "e76e8e40e45f6a8b03118d64845111729ff05b0a33adf993ef54d4c9ab24ec51",
+  "minSdk": 24,
+  "supportedAbis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "notes": [
+    "新增服务端后台推送：投票、当班及完成提醒，服务端每 15 分钟处理。",
+    "首次打开同意开启后台通知并允许系统通知权限；投票与待办支持系统横幅。",
+    "可直接覆盖“苏宿云端体验”build3，保留登录；旧“苏宿”0.3.4 可并存。",
+    "华为厂商通道仍待接通核验，分类审核中；清除进程后的离线送达尚不能保证。",
+    "已通过构建与自动检查，后台、锁屏、横幅及点击冷启动留待本轮真机统一验收。"
+  ],
+  "sourceCommit": "73f7014a7bc4eb39942a95e50b7f2c4814c3c4a8",
+  "revoked": false
+}
