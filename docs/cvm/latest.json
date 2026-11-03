@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "channel": "android-preview",
+  "packageName": "com.dorm.cleaner.cvmtest",
+  "versionName": "0.3.8",
+  "versionCode": 2,
+  "publishedAt": "2026-11-03T15:02:26.979614+00:00",
+  "apkUrl": "https://github.com/BAOXIAOPAI/susu-downloads/releases/download/v0.3.8-cvm.1/susu-0.3.8-cvm-test.apk",
+  "sizeBytes": 66186175,
+  "sha256": "8d7c425a3c952136c49c8accd37adcfc9a1b481a581512f8cfe80d6451a5718e",
+  "minSdk": 24,
+  "supportedAbis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "notes": [
+    "新增前台实时同步，室友操作自动刷新；断线重连后补齐状态。",
+    "新增服务器后台通知：投票、当班与完成提醒，点击进入对应投票。",
+    "覆盖升级原 CVM 0.3.7，保留登录与记录；旧云端版继续保留。",
+    "Android 31 模拟器已实测升级、实时同步、后台通知、点击跳转和关闭注销。",
+    "华为通道及提醒分类已配置，实体手机锁屏待验收；荣耀/vivo 厂商通道未接通。"
+  ],
+  "sourceCommit": "1bead403e143c85becacc058008a7d7bc16f641a",
+  "revoked": false
+}
